@@ -1,0 +1,157 @@
+{
+    "course": "DevOps & Cloud Engineering",
+    "batch": 6,
+    "active": true,
+    "students": [
+        {
+            "id": 101,
+            "name": "Rahim",
+            "age": 24,
+            "cgpa": 3.65,
+            "skills": [
+                "Linux",
+                "Python",
+                "Docker"
+            ],
+            "address": {
+                "city": "Dhaka",
+                "country": "Bangladesh"
+            }
+        },
+        {
+            "id": 102,
+            "name": "Karim",
+            "age": 27,
+            "cgpa": 3.82,
+            "skills": [
+                "Python",
+                "AWS",
+                "Terraform"
+            ],
+            "address": {
+                "city": "Chattogram",
+                "country": "Bangladesh"
+            }
+        },
+        {
+            "id": 103,
+            "name": "Ayesha",
+            "age": 22,
+            "cgpa": 3.91,
+            "skills": [
+                "Python",
+                "Git",
+                "Linux"
+            ],
+            "address": {
+                "city": "Sylhet",
+                "country": "Bangladesh"
+            }
+        },
+        {
+            "id": 104,
+            "name": "Hasan",
+            "age": 26,
+            "cgpa": 3.48,
+            "skills": [
+                "Docker",
+                "Kubernetes",
+                "AWS"
+            ],
+            "address": {
+                "city": "Rajshahi",
+                "country": "Bangladesh"
+            }
+        },
+        {
+            "id": 105,
+            "name": "Nusrat",
+            "age": 23,
+            "cgpa": 3.74,
+            "skills": [
+                "Python",
+                "Ansible",
+                "Terraform"
+            ],
+            "address": {
+                "city": "Khulna",
+                "country": "Bangladesh"
+            }
+        },
+        {
+            "id": 106,
+            "name": "Sakib",
+            "age": 25,
+            "cgpa": 3.56,
+            "skills": [
+                "Linux",
+                "Docker",
+                "GitHub Actions"
+            ],
+            "address": {
+                "city": "Barishal",
+                "country": "Bangladesh"
+            }
+        },
+        {
+            "id": 107,
+            "name": "Mim",
+            "age": 21,
+            "cgpa": 3.88,
+            "skills": [
+                "Python",
+                "AWS",
+                "Docker"
+            ],
+            "address": {
+                "city": "Cumilla",
+                "country": "Bangladesh"
+            }
+        },
+        {
+            "id": 108,
+            "name": "Tanvir",
+            "age": 28,
+            "cgpa": 3.41,
+            "skills": [
+                "Linux",
+                "Kubernetes",
+                "Prometheus"
+            ],
+            "address": {
+                "city": "Rangpur",
+                "country": "Bangladesh"
+            }
+        },
+        {
+            "id": 109,
+            "name": "Farzana",
+            "age": 24,
+            "cgpa": 3.95,
+            "skills": [
+                "Python",
+                "Terraform",
+                "AWS"
+            ],
+            "address": {
+                "city": "Mymensingh",
+                "country": "Bangladesh"
+            }
+        },
+        {
+            "id": 110,
+            "name": "Arif",
+            "age": 29,
+            "cgpa": 3.69,
+            "skills": [
+                "Docker",
+                "Kubernetes",
+                "Grafana"
+            ],
+            "address": {
+                "city": "Dhaka",
+                "country": "Bangladesh"
+            }
+        }
+    ]
+}

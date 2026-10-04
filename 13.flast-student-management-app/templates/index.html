@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Student Management System</h1>
+        <p>Flask + Class & Object + SQLite + REST API</p>
+    </header>
+
+    <section class="card">
+        <h2>Add Student</h2>
+
+        <form action="/students" method="POST" class="student-form">
+
+            <label>Name</label>
+            <input
+                type="text"
+                name="name"
+                placeholder="e.g. Rahim Ahmed"
+                required
+            >
+
+            <label>Age</label>
+            <input
+                type="number"
+                name="age"
+                min="1"
+                placeholder="e.g. 24"
+                required
+            >
+
+            <label>Email</label>
+            <input
+                type="email"
+                name="email"
+                placeholder="rahim@example.com"
+                required
+            >
+
+            <label>CGPA</label>
+            <input
+                type="number"
+                name="cgpa"
+                step="0.01"
+                min="0"
+                max="4"
+                placeholder="e.g. 3.75"
+                required
+            >
+
+            <label>Course</label>
+            <input
+                type="text"
+                name="course"
+                placeholder="e.g. DevOps & Cloud Engineering"
+                required
+            >
+
+            <label>Skills</label>
+            <input
+                type="text"
+                name="skills"
+                placeholder="Python, Linux, Docker"
+                required
+            >
+
+            <button type="submit">Save Student</button>
+
+        </form>
+    </section>
+
+    <section class="card">
+        <div class="section-heading">
+            <h2>Students</h2>
+            <a href="/api/students" target="_blank">View JSON API</a>
+        </div>
+
+        {% if students %}
+
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Email</th>
+                        <th>CGPA</th>
+                        <th>Course</th>
+                        <th>Skills</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    {% for student in students %}
+                    <tr>
+                        <td>{{ student.student_id }}</td>
+                        <td>{{ student.name }}</td>
+                        <td>{{ student.age }}</td>
+                        <td>{{ student.email }}</td>
+                        <td>{{ student.cgpa }}</td>
+                        <td>{{ student.course }}</td>
+                        <td>{{ student.skills }}</td>
+                        <td class="actions">
+                            <a
+                                class="edit"
+                                href="/students/{{ student.student_id }}/edit"
+                            >
+                                Edit
+                            </a>
+
+                            <form
+                                action="/students/{{ student.student_id }}/delete"
+                                method="POST"
+                                class="inline-form"
+                            >
+                                <button
+                                    type="submit"
+                                    class="delete"
+                                    onclick="return confirm('Delete this student?')"
+                                >
+                                    Delete
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+        {% else %}
+
+        <p>No students have been added yet.</p>
+
+        {% endif %}
+    </section>
+
+    <section class="card learning">
+        <h2>What Students Learn</h2>
+
+        <div class="flow">
+            HTML Form
+            <span>→</span>
+            Flask Route
+            <span>→</span>
+            Student Object
+            <span>→</span>
+            SQLite
+            <span>→</span>
+            HTML / JSON Response
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>

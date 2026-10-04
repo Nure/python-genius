@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f3f5f8;
+    color: #1f2937;
+}
+
+.container {
+    width: min(1200px, 94%);
+    margin: 40px auto;
+}
+
+.small-container {
+    width: min(700px, 94%);
+}
+
+header {
+    margin-bottom: 24px;
+}
+
+header h1 {
+    margin-bottom: 6px;
+}
+
+header p {
+    margin-top: 0;
+    color: #6b7280;
+}
+
+.card {
+    background: white;
+    padding: 24px;
+    margin-bottom: 24px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.student-form {
+    display: grid;
+    gap: 10px;
+}
+
+.student-form label {
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.student-form input {
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+button,
+.secondary-button {
+    margin-top: 14px;
+    padding: 12px 16px;
+    border: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.student-form button {
+    background: #111827;
+    color: white;
+}
+
+.secondary-button {
+    text-decoration: none;
+    text-align: center;
+    background: #e5e7eb;
+    color: #111827;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-heading a {
+    text-decoration: none;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 12px;
+    border-bottom: 1px solid #e5e7eb;
+    text-align: left;
+}
+
+th {
+    background: #f9fafb;
+}
+
+.actions {
+    white-space: nowrap;
+}
+
+.edit {
+    display: inline-block;
+    padding: 7px 10px;
+    text-decoration: none;
+    background: #e5e7eb;
+    color: #111827;
+    border-radius: 5px;
+}
+
+.inline-form {
+    display: inline;
+}
+
+.delete {
+    margin: 0 0 0 5px;
+    padding: 7px 10px;
+    background: #111827;
+    color: white;
+}
+
+.flow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    font-weight: 600;
+}
+
+.flow span {
+    color: #6b7280;
+}
+
+.learning {
+    border-left: 5px solid #111827;
+}
+
+@media (max-width: 700px) {
+    .container {
+        margin-top: 20px;
+    }
+
+    .section-heading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 8px;
+    }
+}
